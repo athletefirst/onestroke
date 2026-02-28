@@ -1,0 +1,5 @@
+[{
+  "relation": ["delegate_permission/common.handle_all_urls"],
+  "target" : { "namespace": "android_app", "package_name": "tokyo.athletefirst.onestroke",
+               "sha256_cert_fingerprints": ["59:27:72:BB:44:74:7F:30:0D:AA:DA:52:5B:29:D4:18:5C:F0:FD:0E:AD:85:1C:D0:6C:35:C9:BF:95:A5:17:CC"] }
+}]
