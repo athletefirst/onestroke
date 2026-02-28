@@ -113,18 +113,21 @@
       box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     }
 
+    /* Strava Highlight Box */
     .strava-section {
-      background: linear-gradient(135deg, #ffffff 0%, #fff5f0 100%);
-      border-left: 5px solid #FC4C02;
+      background: #ffffff;
+      border: 3px solid #FC4C02; /* オレンジの太枠 */
       padding: 1.5em;
-      border-radius: 10px;
+      border-radius: 15px;
       margin: 2em auto;
-      box-shadow: 0 4px 12px rgba(252, 76, 2, 0.1);
+      box-shadow: 0 4px 15px rgba(252, 76, 2, 0.15);
     }
 
     .strava-title {
       color: #FC4C02 !important;
-      border-bottom-color: #ffb391 !important;
+      border-bottom: 2px solid #ffb391;
+      padding-bottom: 0.3em;
+      margin-top: 0;
       display: flex;
       align-items: center;
       gap: 0.5em;
@@ -211,15 +214,11 @@
       <h3>❤️ <span class="label">BLE Heart Rate</span></h3>
       <p class="desc">Connects to BLE heart rate monitors.</p>
     </div>
-    <div class="feature">
-      <h3>🧡 <span class="label">Strava Integration</span></h3>
-      <p class="desc">Sync your stroke pitch and route to Strava.</p>
-    </div>
   </div>
 </section>
 
 <section class="strava-section">
-  <h2 id="stravaTitle" class="strava-title">Sync with Strava</h2>
+  <h2 id="stravaTitle" class="strava-title">🧡 Sync with Strava</h2>
   <p id="stravaDesc">OneStroke converts your paddle/rowing motion into <strong>standard cadence data</strong>. Analyze your stroke pitch alongside GPS maps and heart rate directly on the Strava app.</p>
   <div style="font-weight: bold; color: #FC4C02;" id="stravaHighlight">
     ✓ Real-time Pitch to Cadence Sync<br>
@@ -278,7 +277,7 @@
     en: {
       subtitle: "Track Every Stroke. From Tokyo to the World.",
       featureTitle: "Features",
-      stravaTitle: "Sync with Strava",
+      stravaTitle: "🧡 Sync with Strava",
       stravaDesc: "OneStroke converts your paddle/rowing motion into <strong>standard cadence data</strong>. Analyze your stroke pitch alongside GPS maps and heart rate directly on the Strava app.",
       stravaHighlight: "✓ Real-time Pitch to Cadence Sync<br>✓ Automated FIT File Uploads",
       reviewTitle: "User Reviews",
@@ -293,13 +292,12 @@
       ],
       testerText: `Help shape OneStroke by testing the latest Android version.<br><a href="https://appdistribution.firebase.dev/i/933286f9b3ca84b9" target="_blank" class="download-link">📱 Become a Tester</a>`,
       downloadNote: "Requires a Google account and Android device.",
-      labels: ["Stroke Detection", "GPS Tracking", "Auto Timing", "BLE Heart Rate", "Strava Integration"],
+      labels: ["Stroke Detection", "GPS Tracking", "Auto Timing", "BLE Heart Rate"],
       descs: [
         "Real-time stroke detection using accelerometer.",
         "Automatically records route and distance.",
         "Auto start/stop based on stroke motion.",
-        "Connects to BLE heart rate monitors.",
-        "Sync your stroke pitch and GPS data to Strava effortlessly."
+        "Connects to BLE heart rate monitors."
       ],
       reviews: [
         `"OneStroke helped me visualize my stroke rhythm. My training has completely changed."`,
@@ -311,7 +309,7 @@
     ja: {
       subtitle: "ひと漕ぎのすべてを記録する。東京発、世界へ",
       featureTitle: "主な機能",
-      stravaTitle: "Strava 連携",
+      stravaTitle: "🧡 Strava 連携",
       stravaDesc: "OneStrokeはあなたの漕ぎを<strong>標準的なケイデンスデータ</strong>として変換します。Strava上でGPSマップと共に、一漕ぎごとのピッチや心拍数を確認・分析できます。",
       stravaHighlight: "✓ ピッチをケイデンスとして同期<br>✓ FITファイルによる自動アップロード対応",
       reviewTitle: "ユーザーレビュー",
@@ -326,13 +324,12 @@
       ],
       testerText: `最新のOneStroke Android版を試して、開発にご協力ください。<br><a href="https://appdistribution.firebase.dev/i/933286f9b3ca84b9" target="_blank" class="download-link">📱 テスターとして参加する</a>`,
       downloadNote: "GoogleアカウントとAndroid端末が必要です。",
-      labels: ["ストローク検出", "GPSトラッキング", "自動タイム計測", "BLE心拍センサー", "Strava連携"],
+      labels: ["ストローク検出", "GPSトラッキング", "自動タイム計測", "BLE心拍センサー"],
       descs: [
         "加速度センサーで一漕ぎごとにリアルタイム検出。",
         "航行ルートと距離を自動記録。",
         "ストローク開始で自動スタート、停止も自動検出。",
-        "Bluetooth対応心拍計と連携し、ハートレートを表示。",
-        "ピッチデータとGPSルートをStravaへシームレスに同期。"
+        "Bluetooth対応心拍計と連携し、ハートレートを表示。"
       ],
       reviews: [
         `"OneStrokeで漕ぎのリズムが見えるようになり、トレーニングが劇的に変わりました。"`,
